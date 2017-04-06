@@ -1,0 +1,45 @@
+<ion-header-bar class="bar-energized" ng-cloak>
+	
+    <a href="#/reserve/{{reg.bookroom.shortname}}" class="button button-icon-ion-android-arrow-back">Back
+    </a>
+    <h1 class="title">CastAway</h1>
+
+</ion-header-bar>
+
+<ion-content class = "padding"> 
+
+<div class="list list-inset">
+ <form name="myForm" novalidate>
+
+  <label class="item item-input">
+    <input ng-model="reg.firstname" type="text" placeholder="First Name">
+  </label>
+
+  <label class="item item-input">
+    <input ng-model="reg.lastname" type="text" placeholder="Last Name">
+  </label>
+      
+  <label class="item item-input">
+	<!--ng-required säger att den här inputen är ett måste-->
+	<input type="email" name="myInput" ng-model="reg.email" type="text" placeholder="E-Mail"
+    ng-required="true">
+  </label>
+ 
+  <!--ng-show dyker upp i samband med att den har blivit rörd och att mitt mail inte är giltigt-->
+  <div ng-show="myForm.myInput.$touched && myForm.myInput.$invalid"> 
+    <small style="color:red; display: block; text-align: center;">Enter valid mail</small> 
+  </div>
+  
+  <label class="item item-input">
+    <input ng-model="reg.phonenumber" type="text" placeholder="Phonenumber">
+  </label>  
+
+ </form>
+<!--ng-disabled är aktiverad fram till min mail är valid-->
+ <button class="button button-full button-balanced" ng-disabled="myForm.$invalid"
+ ui-sref="receipt">
+  	Confirm Future Staying
+ </button>
+  
+</div>
+</ion-content>

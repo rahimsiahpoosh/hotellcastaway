@@ -1,0 +1,39 @@
+ [
+		{
+		 "name":"Single Room I",
+		 "shortname":"1_Single_Room",
+		 "size":"35 sqm",
+		 "information":"Air-conditioned room features a flat-screen satellite TV, a minibar and a tea/coffee maker. A hairdryer, a bathrobe and slippers are included in a private bathroom.",
+		 "price":"990"		
+		},
+		{
+		 "name":"Single Room II",
+		 "shortname":"2_Single_Room",
+		 "size":"35 sqm",
+		 "information":"Room offers a sofa and a working desk. En suite bathroom comes with free toiletries, a bathtub and shower facilities.",		
+		 "price":"990"
+		},
+		{ 
+		 "name":"Double Room I",
+		 "shortname":"1_Double_Room",
+		 "size":"35 sqm",
+		 "information":"This spacious room features an adjoining seating area. It has direct and independent access to both the sleeping and living rooms from the hotel corridor. It features a flat-screen satellite TV, a minibar and a tea/coffee maker. A hairdryer, a bathrobe and slippers are included in a private bathroom.",		
+		 "price":"1200"
+		},
+		{
+		 "name":"Double Room II",
+		 "shortname":"2_Double_Room",
+		 "size":"35 sqm",
+		 "information":"Each air-conditioned room has a comfortable seating area and a working desk. Amenities include a 40-inch LED TV, a safety deposit box and a coffee maker. Coffee, tea, soft drinks and local beers are complimentary, and are replenished daily. The large private bathroom is equipped with a bathtub and a separate rain shower.",
+		 "price":"1200"		
+		},
+		{
+		 "name":"Family Room",
+		 "shortname":"Family_Room",
+		 "size":"50 sqm",
+		 "information":"Each air-conditioned room has a comfortable seating area and a working desk. Amenities include a 40-inch LED TV, a safety deposit box and a coffee maker. Coffee, tea, soft drinks and local beers are complimentary, and are replenished daily. The large private bathroom is equipped with a bathtub and a separate rain shower.",		
+		 "price":"1800"	
+		}
+]
+
+

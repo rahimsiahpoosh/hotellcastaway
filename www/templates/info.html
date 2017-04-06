@@ -1,0 +1,42 @@
+<ion-header-bar class="bar-energized" ng-cloak>
+	
+    <a href="#/reserve" class="button button-icon-ion-android-arrow-back">Back
+    </a>
+    <h1 class="title">CastAway</h1>
+
+</ion-header-bar>
+<ion-content class="padding" ng-controller="ListController">
+		
+<!--ng-repeat="item in data | filter: {shortname: whichroom}" när vi kallar datan 
+så har vi satt ett filter utifrån vilket id som är valt-->
+
+<!--ng-init= "setBookRoom(item)" här initerar vi item i funktionen setBookRoom. Så hela rummet finns nu i vår objekt och kan nu kallas-->
+<div class="list card padding"
+	ng-repeat="item in data | filter: {shortname: whichroom}" ng-init= "setBookRoom(item)">
+	<img class="full-image" ng-src="img/{{item.shortname}}.jpg" alt="{{ item.name }} Photo">
+	<h2 class="receiptcenter">{{item.name}}</h2>
+
+	<div class="item item-text-wrap">
+    	Room size : {{item.size}}
+  	</div>
+
+  	<div class="item item-text-wrap">
+    	{{item.information}}
+  	</div>
+
+  	<div class="item item-text-wrap">
+    	Price per night : {{item.price}} kr
+  	</div>
+	</div>
+
+
+	<p>{{item.information}}</p>
+
+	<button class="button button-full button-balanced" ui-sref="book">
+  	Book Room
+	</button>
+
+</div>
+
+
+</ion-content>

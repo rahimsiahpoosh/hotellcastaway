@@ -1,0 +1,23 @@
+<ion-header-bar class="bar-energized" ng-cloak>
+	
+    <a href="#/start" class="button button-icon-ion-android-arrow-back">Back
+    </a>
+    <h1 class="title">CastAway</h1>
+
+</ion-header-bar>
+
+<ion-content class="padding" ng-controller="ListController">
+		<ion-list>
+			<!--ng-repeat hjälper oss att hämta data-->
+			<ion-item ng-repeat='item in data' class="item-thumbnail-left item-text-wrap" href="#/reserve/{{item.shortname}}">
+
+			<img ng-src="img/{{item.shortname}}.jpg" alt="{{ item.name }} Photo" ">
+			
+			<h2>{{item.name}}</h2>
+			<!--Här säger vi att det är max 50 tecken som ska visas med hjälp av filtret
+			limitTo:50-->
+			<p>{{item.information| limitTo:50}}</p>	
+			
+			</ion-item>
+		</ion-list>
+</ion-content>

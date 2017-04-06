@@ -1,0 +1,92 @@
+  
+  <ion-header-bar class="bar-energized" ng-cloak>
+        <h1 class="title">CastAway</h1>
+  </ion-header-bar>
+  <!-- Med hjälp av ng-controller så kopplar vi till controllern i js-->
+  <ion-content class="padding" ng-controller="ListController">
+        
+        <div class="list">
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Check in Month
+          </div>
+          <!--Det alt som väljs läggs till i reg.checkinmonth med hjälp av ng-model-->
+          <select ng-model="reg.checkinmonth"> 
+            <option>Jan</option><option>Feb</option>
+            <option>Mar</option><option>Apr</option>
+            <option>Maj</option><option>Jun</option>
+            <option>Jul</option><option>Aug</option>
+            <option>Sep</option><option>Okt</option>
+          	<option>Nov</option><option>Dec</option>
+          </select>
+        </label>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Check in Date
+          </div>
+          <select ng-model="reg.checkindate">
+            <option>1</option><option>2</option><option>3</option>4<option>5</option>
+          	<option>6</option><option>7</option><option>8</option>9<option>10</option>
+          	<option>11</option><option>12</option><option>13</option>14<option>15</option>
+          	<option>16</option><option>17</option><option>18</option>19<option>20</option>
+          	<option>21</option><option>22</option><option>23</option>24<option>25</option>
+          	<option>26</option><option>27</option><option>28</option>29<option>30</option>
+          	<option>31</option>
+          </select>
+        </label>
+        
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Check out Month
+          </div>
+          <select ng-model="reg.checkoutmonth">
+            <option>Jan</option><option>Feb</option>
+            <option>Mar</option><option>Apr</option>
+            <option>Maj</option><option>Jun</option>
+            <option>Jul</option><option>Aug</option>
+            <option>Sep</option><option>Okt</option>
+          	<option>Nov</option><option>Dec</option>
+          </select>
+        </label>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Check out Date
+          </div>
+          <select ng-model="reg.checkoutdate">
+            <option>1</option><option>2</option><option>3</option>4<option>5</option>
+          	<option>6</option><option>7</option><option>8</option>9<option>10</option>
+          	<option>11</option><option>12</option><option>13</option>14<option>15</option>
+          	<option>16</option><option>17</option><option>18</option>19<option>20</option>
+          	<option>21</option><option>22</option><option>23</option>24<option>25</option>
+          	<option>26</option><option>27</option><option>28</option>29<option>30</option>
+          	<option>31</option>
+          </select>
+        </label>
+
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Adults
+          </div>
+          <select ng-model="reg.adults">
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+          </select>
+        </label>
+        
+        <label class="item item-input item-select">
+          <div class="input-label">
+            Children
+          </div>
+          <select ng-model="reg.children">
+             <option>1</option><option>2</option><option>3</option><option>4</option>
+             <option>5</option><option>6</option><option>7</option><option>8</option>
+          </select>
+        </label>
+        <!--ui-sref är den som länkar till vår state-->
+        <button class="button button-full button-balanced" ui-sref="reserve" ui-sref-active="active">View Rooms</button>
+        </div>
+
+  </ion-content>
+  

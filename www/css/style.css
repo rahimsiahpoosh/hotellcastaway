@@ -1,0 +1,20 @@
+.img-responsive{
+	max-width: 100%;
+	height: auto;
+	display:block ;
+}/* Empty. Add your own CSS if you like */
+
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 13em
+}
+
+.receiptcenter {
+	text-align: center;
+}
+
+input.ng-invalid.ng-touched {
+	border: 2px solid red;
+}
+

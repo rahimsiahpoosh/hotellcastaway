@@ -1,0 +1,54 @@
+<ion-header-bar class="bar-energized" ng-cloak>
+	
+    <a href="#/info/{{reg.bookroom.shortname}}" class="button button-icon-ion-android-arrow-back">Back
+    </a>
+    <h1 class="title">CastAway</h1>
+
+</ion-header-bar>
+
+<ion-content class="padding" ng-controller="ListController">
+
+<div class="card">
+
+  <div class="item item-text-wrap">
+    Check in : {{reg.checkinmonth}} {{reg.checkindate}}
+  </div>
+  <div class="item item-text-wrap">
+    Check out : {{reg.checkoutmonth}} {{reg.checkoutdate}}
+  </div>
+
+  <div class="item item-text-wrap">
+    Booked Room : {{reg.bookroom.name}} 
+  </div>
+
+  <div class="item item-text-wrap">
+    Price : {{reg.bookroom.price}} kr per night
+  </div>
+
+  <div class="item item-text-wrap">
+    Adults : {{reg.adults}} Children : {{reg.children}}
+  </div>
+
+  <div class="item item-text-wrap">
+    Firstname : {{reg.firstname}} 
+  </div>
+
+  <div class="item item-text-wrap">
+    Lastname : {{reg.lastname}} 
+  </div>
+
+  <div class="item item-text-wrap">
+    E-mail : {{reg.email}} 
+  </div>  
+
+  <div class="item item-text-wrap">
+    Phonenumber : {{reg.phonenumber}} 
+  </div>  
+
+</div>
+	<!--ng-click kallar vi på en funktion som ser till att vår start sida är refreshad-->
+ <button class="button button-full button-balanced" ng-click ="start()">
+  	Confirm
+ </button>
+
+</ion-content>
